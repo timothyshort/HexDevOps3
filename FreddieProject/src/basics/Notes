@@ -36,6 +36,12 @@ Core Programming
 - arrays (ordered set of similar-type information)
 - loops
 
+Constructors: special functions bound to the class
+1. always public
+2. have no return type
+3. have same name as the class name
+- initialize properties of the object
+
 
 // checkbox algorithm
 // 1. decide if we want the checkbox checked
