@@ -1,0 +1,25 @@
+package basics;
+
+public class Playground {
+
+	public static void main(String[] args) {
+		arrayDemo();
+	}
+	
+	static void arrayDemo() {
+		System.out.println("This is the array demo");
+		String[] cities = { "Reston", "Atlanta", "Pittsburgh", "New York" };
+		
+		// initialize counter
+		int counter = 0;
+		do {
+			// execute code
+			System.out.println(cities[counter]);
+			
+			// increment counter
+			counter = counter+1;
+		// loop condition
+		} while (counter < 4 );
+	}
+
+}

@@ -1,0 +1,18 @@
+Browser considerations:
+- Firefox reads the inner HTML, whereas IE and Chrome read the post-CSS (formatted) inner HTML
+- IE Options: enable experimental mode, zoom at 100%
+
+
+Finding Elements:
+- ID and Name preferred
+- Use ID for radio button
+- LinkText and PartialLinkText finds 'a' tags with the inner HTML as the parameter
+
+String API
+- don't use =, use .equals(), .equalsIgnoreCase(), .contains()
+
+Scope: Local vs Class-Level
+
+Naming Conventions:
+- variables: pascal case, ex: firstName
+- functions/methods: pascal case, ex: openBrowserAndClickStart()

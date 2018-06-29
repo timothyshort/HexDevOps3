@@ -1,0 +1,15 @@
+package basics;
+
+public class Playground {
+
+	public static void main(String[] args) {
+		arrayDemo();
+	}
+	
+	static void arrayDemo() {
+		System.out.println("This is the array demo");
+		String[] cities = { "Reston", "Atlanta", "Pittsburgh", "New York" };
+		System.out.println(cities[0]);
+	}
+
+}

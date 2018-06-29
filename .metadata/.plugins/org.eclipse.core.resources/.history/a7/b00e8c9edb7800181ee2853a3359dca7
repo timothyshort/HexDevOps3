@@ -1,0 +1,13 @@
+package basics;
+
+public class LoginTestDemo {
+
+	public static void main(String[] args) {
+		// Go to the browser
+		
+		// Open the login page url
+		
+		// 
+	}
+
+}

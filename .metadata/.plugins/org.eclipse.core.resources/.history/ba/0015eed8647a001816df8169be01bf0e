@@ -1,0 +1,33 @@
+package basics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class NewAccountDemo {
+
+	public static void main(String[] args) {
+		// Initialize browser settings
+		System.setProperty("webdriver.gecko.driver", "C:\\HexawareTraining\\Materials\\Software\\Selenium-BDD\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
+		
+		// Click Create Account
+		driver.findElement(By.linkText("Create Account")).click();
+		
+		// Fill out the form
+		driver.findElement(By.name("ctl00$MainContent$txtFirstName")).sendKeys("Jason");
+		driver.findElement(By.name("ctl00$MainContent$txtEmail")).sendKeys("jason@testemail.com");
+		driver.findElement(By.name("ctl00$MainContent$txtHomePhone")).sendKeys("1231231234");
+		// use ID to select a radio input
+		driver.findElement(By.id("MainContent_Male")).click();
+		
+		
+		// Submit the form
+		
+		
+		// Validation
+	}
+
+}

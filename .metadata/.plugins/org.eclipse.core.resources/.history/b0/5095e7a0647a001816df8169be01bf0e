@@ -1,0 +1,3 @@
+Browser considerations:
+- Firefox reads the inner HTML, whereas IE and Chrome read the post-CSS (formatted) inner HTML
+- IE Options: enable experimental mode, zoom at 100%

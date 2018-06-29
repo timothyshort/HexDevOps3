@@ -1,0 +1,11 @@
+package basics;
+
+public class LoginTestParameterized {
+	
+	public static void main(String[] args) {
+		// Open browser
+		// Enter login
+		// Validate expected outcome
+	}
+
+}

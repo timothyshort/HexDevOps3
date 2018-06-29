@@ -1,0 +1,32 @@
+package basics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LoginTestDemo {
+
+	public static void main(String[] args) {
+		// Open the browser
+		System.setProperty("webdriver.chrome.driver", "C:\\HexawareTraining\\Materials\\Software\\Selenium-BDD\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		// Open the login page url
+		driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
+		
+		// *interacting with UI:
+			// 1. locating the element
+			// 2. perform the action
+			// 3. provide parameters
+		
+		// Enter username
+		// driver.findElement(By.id("MainContent_txtUserName")).sendKeys("tim@testemail.com");
+		
+		// Enter password
+		
+		// Click login button
+		
+		// Validate, verify
+	}
+
+}

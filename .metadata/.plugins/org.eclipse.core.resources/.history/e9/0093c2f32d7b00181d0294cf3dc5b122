@@ -1,0 +1,36 @@
+package basics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoginTestParameterized {
+	
+	public static void main(String[] args) throws InterruptedException {
+		String[] usernames = { "tim@testemail.com", "abadtestemail@mail.com", "jason@testemail.com"};
+		String[] passwords = { "password", "yesthisisabadpassword", "jpassword" };
+		int numberOfCases = usernames.length;
+		
+		for (int i=0; i<numberOfCases; i++) {
+			// Print the usernames
+			
+			
+			// Open browser
+			System.setProperty("webdriver.gecko.driver", "C:\\HexawareTraining\\Materials\\Software\\Selenium-BDD\\geckodriver.exe");
+			WebDriver driver = new FirefoxDriver();
+			driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
+			
+			// Enter login
+			driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys("tim@testemail.com");
+			driver.findElement(By.id("MainContent_txtPassword")).sendKeys("password");
+			driver.findElement(By.name("ctl00$MainContent$btnLogin")).click();
+			
+			// Validate expected outcome
+			
+			// Close browser
+			Thread.sleep(5000);
+			driver.quit();
+		}
+	}
+
+}
