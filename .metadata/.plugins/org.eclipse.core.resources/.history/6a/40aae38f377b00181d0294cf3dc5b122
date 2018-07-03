@@ -1,0 +1,21 @@
+package testframeworks;
+
+public class JUnitIntro {
+	
+	// Unit Test Framework guides the flow of the program (or test)
+	
+	
+	// Start browser session, initialize settings, connect to data source
+	// run setup() before each test
+	void setup() {
+		
+	}
+	
+	// Execute UI test steps
+	void test1() {
+		
+	}
+	
+	// Close the browser session, generate reports
+
+}

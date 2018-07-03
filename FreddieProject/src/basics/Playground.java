@@ -3,7 +3,48 @@ package basics;
 public class Playground {
 
 	public static void main(String[] args) {
-		arrayAndLoopsDemo();
+		// arrayAndLoopsDemo();
+		exceptionsDemo();
+	}
+	
+	static void exceptionsDemo() {
+		System.out.println("Exceptions...");
+		int a=5;
+		int b=0;
+		String[] cities = {"New York", "Miami" };
+		
+		try {
+			int c = a/b;
+			System.out.println(c);
+			System.out.println(cities[5]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Array index out of bounds");
+		} catch (ArithmeticException e) {
+			System.out.println("Cannot divide by zero");
+		} catch (Exception e) {
+			System.out.println("Error");
+		} finally {
+			System.out.println("This block always gets executed");
+		}
+		
+		/*
+		try {
+		// open the file >> file does not exist?
+		// read the file >> document not readable?
+		} catch (FileNotFoundException e) {
+			
+		} catch (IOException e) {
+			
+		} finally {
+			// close the file
+		}
+		*/
+		
+		
+		// String[] companies = { "Apple", "Google", "Netflix" };
+		// System.out.println(companies[3]);
+		
+		System.out.println("Closing program");
 	}
 	
 	static void arrayAndLoopsDemo() {

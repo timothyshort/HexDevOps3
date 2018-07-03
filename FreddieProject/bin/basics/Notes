@@ -36,8 +36,22 @@ Core Programming
 - arrays (ordered set of similar-type information)
 - loops
 
+Constructors: special functions bound to the class
+1. always public
+2. have no return type
+3. have same name as the class name
+- initialize properties of the object
+
 
 // checkbox algorithm
 // 1. decide if we want the checkbox checked
 	// 2. Yes. Is it checked? > Yes? DONE | No? Click
 	// 3. No. Is it checked? > Yes? Click | No? DONE
+	
+Exceptions / Errors / Assertions / Fails
+1. Assertion: valid test condition that fails
+2. Exception: Java cannot execute code line *Unchecked Exceptions
+
+Try-Catch:
+"Try" to execute a block of code - there may be an error
+"Catch" a potential error

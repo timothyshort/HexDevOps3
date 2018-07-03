@@ -12,6 +12,7 @@ public class LoginTestDemo {
 		System.setProperty("webdriver.gecko.driver", "C:\\HexawareTraining\\Materials\\Software\\Selenium-BDD\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		
+		
 		// Open the login page url
 		driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
 		

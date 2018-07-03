@@ -1,0 +1,30 @@
+package testframeworks;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class JUnitParameterized {
+	
+	
+	private static String[][] testData() {
+		// call utility function to get data from external source
+		String[][] records = {
+				{ "tim@testemail.com", "password", "pass" },
+				{ "badlogin", "badpassword", "fail" },
+			};
+		return records;
+		
+	}
+	
+	@Test
+	public void test() {
+		
+	}
+	
+	@Before
+	public void setup() {
+		
+	}
+	
+
+}

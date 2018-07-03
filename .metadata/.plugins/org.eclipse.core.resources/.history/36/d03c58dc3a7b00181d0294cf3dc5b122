@@ -1,0 +1,13 @@
+package testframeworks;
+
+import org.junit.Test;
+
+public class JUnitParameterized {
+	
+	@Test
+	public void test() {
+		
+	}
+	
+
+}
