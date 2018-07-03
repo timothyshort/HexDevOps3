@@ -8,6 +8,9 @@ Finding Elements:
 - Use ID for radio button
 - LinkText and PartialLinkText finds 'a' tags with the inner HTML as the parameter
 - CSS Selector: defines by tag and attribute-value pairs
+- Xpath: finds element as defined by DOM location
+	absolute - html/body is the root
+	relative - to nearest ID or name
 
 String API
 - don't use =, use .equals(), .equalsIgnoreCase(), .contains()

@@ -1,0 +1,30 @@
+package basics;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import utilities.DriverFactory;
+
+public class ShoppingCartDemo {
+	
+	@Test
+	public void shopCartTest() {
+		WebDriver driver = DriverFactory.start("firefox");
+		driver.get("http://sdettraining.com/online/default.asp");
+		String product = "tv";
+		
+		// Search for product
+		driver.findElement(By.name("txtSearch")).sendKeys(product);
+		driver.findElement(By.id("Go")).click();
+		
+		// Assert that we are seeing TVs
+		String searchResultProduct = driver.findElement(By.xpath("html/body/font/table[1]/tbody/tr[1]/td[2]/font[2]/b")).getText();
+		System.out.println(searchResultProduct);
+		
+		Assert.assertTrue(searchResultProduct.contains(product));
+		
+	}
+
+}

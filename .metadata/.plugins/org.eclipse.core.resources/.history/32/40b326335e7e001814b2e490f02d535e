@@ -1,0 +1,14 @@
+package basics;
+
+import org.junit.Test;
+
+import utilities.DriverFactory;
+
+public class ShoppingCartDemo {
+	
+	@Test
+	public void shopCartTest() {
+		WebDriver driver = DriverFactory.start("firefox");
+	}
+
+}
