@@ -1,0 +1,46 @@
+package basics;
+
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import utilities.DriverFactory;
+
+public class WindowHandling {
+	WebDriver driver;
+
+	@Before
+	public void setup() {
+		driver = DriverFactory.start("firefox");
+		driver.get("http://sdettraining.com/projects/windows.html");
+	}
+	
+	@Ignore
+	@Test
+	public void windowHandling() {
+		
+	}
+	
+	@Test
+	public void popUpHandling() throws InterruptedException {
+		boolean deleteAccount = true;
+		
+		// Click delete account button
+		driver.findElement(By.id("delete_account")).click();
+		String alertMessage = driver.switchTo().alert().getText();
+		System.out.println(alertMessage);
+		Thread.sleep(2000);
+		
+		// Handle alert
+		if (deleteAccount) {
+			// Accept the alert
+			driver.switchTo().alert().accept();
+		} else {
+			// Cancel the alert
+			driver.switchTo().alert().dismiss();
+		}
+	}
+
+}

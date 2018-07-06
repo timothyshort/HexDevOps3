@@ -1,6 +1,8 @@
 package basics;
 
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -57,6 +59,26 @@ public class ShoppingCartDemo {
 		List<WebElement> shopCartItems = driver.findElements(By.xpath("/html/body/font/form/table/tbody/tr"));
 		WebElement grandTotal = shopCartItems.get(shopCartItems.size()-1);
 		System.out.println("CART TOTAL: " + grandTotal.findElement(By.xpath("td[2]")).getText());
+		
+		// Checkout, enter billing
+		driver.findElement(By.cssSelector("input[name='cmdSubmit'][value='Proceed to Checkout']")).click();
+		driver.findElement(By.cssSelector("input[name='cmdSubmit'][value='Submit Order']")).click();
+		
+		
+		// Confirmation
+		
+		// 1. Confirm success message
+		String confMessage = "Thank you for ordering with us!";
+		String orderResult = driver.findElement(By.xpath("html/body")).getText();
+		Assert.assertTrue(orderResult.contains(confMessage));
+		
+		// 2. Extract confirmation number (use RegEx)
+		String pattern = "Order# (.*) safe";
+		Pattern r = Pattern.compile(pattern);
+		Matcher m = r.matcher(orderResult);
+		m.find();
+		String confNumber = m.group(1);
+		System.out.println("Confirmation #" + confNumber);
 	}
 
 }

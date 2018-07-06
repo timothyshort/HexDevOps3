@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="WindowHandling (1)" project="FreddieProject" tests="2" started="2" failures="0" errors="0" ignored="1">
+  <testsuite name="basics.WindowHandling" time="11.026">
+    <testcase name="popUpHandling" classname="basics.WindowHandling" time="11.025"/>
+    <testcase name="windowHandling" classname="basics.WindowHandling" time="0.0" ignored="true"/>
+  </testsuite>
+</testrun>

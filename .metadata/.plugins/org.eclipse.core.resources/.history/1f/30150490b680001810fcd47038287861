@@ -1,0 +1,19 @@
+package basics;
+
+import org.openqa.selenium.WebDriver;
+
+import utilities.DriverFactory;
+
+public class WindowHandling {
+
+	@Before
+	public void setup() {
+		WebDriver driver = DriverFactory.start("firefox");
+		driver.get("http://sdettraining.com/projects/windows.html");
+	}
+	
+	static void popUpHandling() {
+		
+	}
+
+}
