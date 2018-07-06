@@ -1,2 +1,0 @@
-Browser considerations:
-- Firefox reads the inner HTML, whereas IE and Chrome read the post-CSS (formatted) inner HTML

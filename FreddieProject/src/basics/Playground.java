@@ -4,7 +4,21 @@ public class Playground {
 
 	public static void main(String[] args) {
 		// arrayAndLoopsDemo();
-		exceptionsDemo();
+		// exceptionsDemo();
+		forEachDemo();
+	}
+	
+	static void forEachDemo() {
+		System.out.println("FOR EACH DEMO\n");
+		
+		String[] cities = {"New York", "Chicago", "San Fransisco", "Dallas", "Denver" };
+		//for (int i=0; i< cities.length; i++) {
+		//	System.out.println(cities[i]);
+		//}
+		
+		for (String city : cities) {
+			System.out.println(city);
+		}
 	}
 	
 	static void exceptionsDemo() {

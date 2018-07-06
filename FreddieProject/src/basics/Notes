@@ -38,6 +38,9 @@ Core Programming
 - functions (return types vs void)
 - arrays (ordered set of similar-type information)
 - loops
+>> do-while (runs until condition is met)
+>> for-loop (index-based, initialize, test, and increment/decrement)
+>> for-each (iterates through entire data structure)
 
 Constructors: special functions bound to the class
 1. always public
@@ -58,3 +61,7 @@ Exceptions / Errors / Assertions / Fails
 Try-Catch:
 "Try" to execute a block of code - there may be an error
 "Catch" a potential error
+
+.findElement vs .findElements
+- findElement: returns one WebElement (make sure that your identifier is unique)
+- findElements: return list of WebElements (can have multiple identifier matches)
