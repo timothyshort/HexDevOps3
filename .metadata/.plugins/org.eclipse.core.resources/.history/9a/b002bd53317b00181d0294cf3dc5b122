@@ -1,8 +1,0 @@
-package utilities;
-
-public class DriverFactory {
-	
-	// This function returns a WebDriver
-	public static WebDriver
-
-}

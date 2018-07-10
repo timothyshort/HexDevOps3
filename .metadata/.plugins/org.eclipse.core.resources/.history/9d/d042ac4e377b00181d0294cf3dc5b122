@@ -1,7 +1,0 @@
-package testframeworks;
-
-public class JUnitIntro {
-	
-	// Unit Test Framework guides the flow of the program (or test)
-
-}
