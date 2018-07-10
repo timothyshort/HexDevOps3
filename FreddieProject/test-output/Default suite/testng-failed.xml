@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testframeworks.TestNGParameterization">
+      <class name="advanced.AccountManagement">
         <methods>
-          <include name="usernameTest"/>
+          <include name="loginTest" invocation-numbers="1 2"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testframeworks.TestNGParameterization -->
+      </class> <!-- advanced.AccountManagement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

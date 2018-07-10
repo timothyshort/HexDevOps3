@@ -1,134 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="9" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Freddie Test Suite" duration-ms="142" started-at="2018-07-10T00:12:57Z" finished-at="2018-07-10T00:12:57Z">
+  <suite name="Default suite" duration-ms="23413" started-at="2018-07-10T01:32:51Z" finished-at="2018-07-10T01:33:15Z">
     <groups>
     </groups>
-    <test name="Smoke Tests" duration-ms="56" started-at="2018-07-10T00:12:57Z" finished-at="2018-07-10T00:12:57Z">
-      <class name="testframeworks.TestNGIntro">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testframeworks.TestNGIntro@6d8a00e3]" name="setup" is-config="true" duration-ms="5" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
+    <test name="Default test" duration-ms="23413" started-at="2018-07-10T01:32:51Z" finished-at="2018-07-10T01:33:15Z">
+      <class name="advanced.AccountManagement">
+        <test-method status="PASS" signature="setup()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="setup" is-config="true" duration-ms="6361" started-at="2018-07-09T21:32:51Z" finished-at="2018-07-09T21:32:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="freddieFeatureTest()[pri:0, instance:testframeworks.TestNGIntro@6d8a00e3]" name="freddieFeatureTest" duration-ms="11" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [25tu] but found [1etm]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [25tu] but found [1etm]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at testframeworks.TestNGIntro.freddieFeatureTest(TestNGIntro.java:19)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freddieFeatureTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testframeworks.TestNGIntro@6d8a00e3]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testframeworks.TestNGIntro@6d8a00e3]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="freddieLoginTest()[pri:0, instance:testframeworks.TestNGIntro@6d8a00e3]" name="freddieLoginTest" duration-ms="2" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freddieLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testframeworks.TestNGIntro@6d8a00e3]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testframeworks.TestNGIntro -->
-    </test> <!-- Smoke Tests -->
-    <test name="Regression Tests" duration-ms="43" started-at="2018-07-10T00:12:57Z" finished-at="2018-07-10T00:12:57Z">
-      <class name="testframeworks.TestNGParameterization">
-        <test-method status="PASS" signature="generticTest(java.lang.String, double, double, java.lang.String)[pri:0, instance:testframeworks.TestNGParameterization@7c16905e]" name="generticTest" duration-ms="2" started-at="2018-07-09T20:12:57Z" data-provider="genericData" finished-at="2018-07-09T20:12:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[30-year FIXED]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4.5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[150000]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[71108]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generticTest -->
-        <test-method status="PASS" signature="generticTest(java.lang.String, double, double, java.lang.String)[pri:0, instance:testframeworks.TestNGParameterization@7c16905e]" name="generticTest" duration-ms="2" started-at="2018-07-09T20:12:57Z" data-provider="genericData" finished-at="2018-07-09T20:12:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[15-year FHA]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[120000]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[45669]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generticTest -->
-        <test-method status="PASS" signature="usernameTest(java.lang.String, java.lang.String)[pri:0, instance:testframeworks.TestNGParameterization@7c16905e]" name="usernameTest" duration-ms="3" started-at="2018-07-09T20:12:57Z" data-provider="usernameTestData" finished-at="2018-07-09T20:12:57Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="loginTest" duration-ms="1096" started-at="2018-07-09T21:32:57Z" data-provider="testData" finished-at="2018-07-09T21:32:59Z">
           <params>
             <param index="0">
               <value>
@@ -140,11 +23,24 @@
                 <![CDATA[password]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- usernameTest -->
-        <test-method status="PASS" signature="usernameTest(java.lang.String, java.lang.String)[pri:0, instance:testframeworks.TestNGParameterization@7c16905e]" name="usernameTest" duration-ms="5" started-at="2018-07-09T20:12:57Z" data-provider="usernameTestData" finished-at="2018-07-09T20:12:57Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="tearDown" is-config="true" duration-ms="425" started-at="2018-07-09T21:32:59Z" finished-at="2018-07-09T21:32:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="setup" is-config="true" duration-ms="6028" started-at="2018-07-09T21:32:59Z" finished-at="2018-07-09T21:33:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="loginTest" duration-ms="1232" started-at="2018-07-09T21:33:05Z" data-provider="testData" finished-at="2018-07-09T21:33:06Z">
           <params>
             <param index="0">
               <value>
@@ -156,11 +52,24 @@
                 <![CDATA[lindseypassword]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- usernameTest -->
-        <test-method status="PASS" signature="usernameTest(java.lang.String, java.lang.String)[pri:0, instance:testframeworks.TestNGParameterization@7c16905e]" name="usernameTest" duration-ms="1" started-at="2018-07-09T20:12:57Z" data-provider="usernameTestData" finished-at="2018-07-09T20:12:57Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="tearDown" is-config="true" duration-ms="275" started-at="2018-07-09T21:33:06Z" finished-at="2018-07-09T21:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="setup" is-config="true" duration-ms="6642" started-at="2018-07-09T21:33:07Z" finished-at="2018-07-09T21:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="loginTest" duration-ms="976" started-at="2018-07-09T21:33:13Z" data-provider="testData" finished-at="2018-07-09T21:33:14Z">
           <params>
             <param index="0">
               <value>
@@ -172,78 +81,20 @@
                 <![CDATA[kpassword]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- usernameTest -->
-      </class> <!-- testframeworks.TestNGParameterization -->
-      <class name="testframeworks.TestNGIntro">
-        <test-method status="FAIL" signature="freddieFeatureTest()[pri:0, instance:testframeworks.TestNGIntro@2a2d45ba]" name="freddieFeatureTest" duration-ms="2" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [25tu] but found [1etm]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [25tu] but found [1etm]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at testframeworks.TestNGIntro.freddieFeatureTest(TestNGIntro.java:19)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:776)
-	at org.testng.TestRunner.run(TestRunner.java:634)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
-	at org.testng.TestNG.runSuites(TestNG.java:1161)
-	at org.testng.TestNG.run(TestNG.java:1129)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freddieFeatureTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testframeworks.TestNGIntro@2a2d45ba]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testframeworks.TestNGIntro@2a2d45ba]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="tearDown" is-config="true" duration-ms="347" started-at="2018-07-09T21:33:14Z" finished-at="2018-07-09T21:33:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testframeworks.TestNGIntro@2a2d45ba]" name="setup" is-config="true" duration-ms="1" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="freddieLoginTest()[pri:0, instance:testframeworks.TestNGIntro@2a2d45ba]" name="freddieLoginTest" duration-ms="1" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freddieLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testframeworks.TestNGIntro@2a2d45ba]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-07-09T20:12:57Z" finished-at="2018-07-09T20:12:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testframeworks.TestNGIntro -->
-    </test> <!-- Regression Tests -->
-  </suite> <!-- Freddie Test Suite -->
+      </class> <!-- advanced.AccountManagement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
