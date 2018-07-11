@@ -1,11 +1,13 @@
 package basics;
 
+import java.io.File;
+
 public class Playground {
 
 	public static void main(String[] args) {
 		// arrayAndLoopsDemo();
-		// exceptionsDemo();
-		forEachDemo();
+		exceptionsDemo();
+		// forEachDemo();
 	}
 	
 	static void forEachDemo() {
@@ -25,16 +27,28 @@ public class Playground {
 		System.out.println("Exceptions...");
 		int a=5;
 		int b=0;
-		String[] cities = {"New York", "Miami" };
 		
 		try {
-			int c = a/b;
-			System.out.println(c);
+			int d = a/b;
+			System.out.println(d);
+		} catch (ArithmeticException err) {
+			// System.out.println("Cannot divide by zero");
+			
+			// Show message in English terms
+			System.out.println(err.getMessage());
+			
+			// Show exception and message
+			System.out.println(err.toString());
+			
+			// Show the stack strace
+			err.printStackTrace();
+		} 
+		
+		/* String[] cities = {"New York", "Miami" };	
+		try {
 			System.out.println(cities[5]);
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Array index out of bounds");
-		} catch (ArithmeticException e) {
-			System.out.println("Cannot divide by zero");
 		} catch (Exception e) {
 			System.out.println("Error");
 		} finally {
