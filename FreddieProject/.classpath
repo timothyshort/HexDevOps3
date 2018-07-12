@@ -5,5 +5,12 @@
 	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/selenium-server-standalone-3.6.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/poi-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/poi-ooxml-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/poi-ooxml-schemas-3.16.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/stax-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

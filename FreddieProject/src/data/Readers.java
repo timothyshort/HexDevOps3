@@ -5,11 +5,26 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
+
+import utilities.GlobalConfigs;
 
 public class Readers {
 
 	public static void main(String[] args) {
-		utilities.CSV.get();
+		// List<String[]> data = utilities.CSV.get("C:\\HexawareTraining\\Cohort3\\Selenium-BDD\\Workspace\\FreddieProject\\test-data\\LoginData.txt");
+		String[][] data = utilities.Excel.get(GlobalConfigs.TESTDATA_DIR + "NewAccountData.xlsx");
+		
+		
+		// Iterate dataset
+		for (String[] record : data) {
+			System.out.print("[ ");
+			for (String field : record) {
+				System.out.print(field + ", ");
+			}
+			System.out.println("]");
+		}
+		
 	}
 	
 	static void readFile() {

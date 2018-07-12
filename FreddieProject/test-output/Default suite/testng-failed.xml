@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="advanced.AccountManagement">
+      <class name="data.NewAccountEXCEL">
         <methods>
-          <include name="loginTest" invocation-numbers="1 2"/>
           <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="teardown"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- advanced.AccountManagement -->
+      </class> <!-- data.NewAccountEXCEL -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

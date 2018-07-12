@@ -14,8 +14,7 @@ public class Screenshot {
 	// takes a screenshot of webdriver and makes a .jpg file
 	public static void take(WebDriver driver, String file) {
 		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String filepath = "C:\\HexawareTraining\\Cohort3\\Selenium-BDD\\Workspace\\FreddieProject\\screenshots\\";
-		String filename = filepath + file + ".jpg";
+		String filename = GlobalConfigs.SCREENSHOT_DIR + file + ".jpg";
 		File destinationFile = new File(filename);
 		try {
 			FileUtils.copyFile(screenshotFile, destinationFile);

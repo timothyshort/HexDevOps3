@@ -1,100 +1,333 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23413" started-at="2018-07-10T01:32:51Z" finished-at="2018-07-10T01:33:15Z">
+  <suite name="Default suite" duration-ms="735" started-at="2018-07-12T00:59:16Z" finished-at="2018-07-12T00:59:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23413" started-at="2018-07-10T01:32:51Z" finished-at="2018-07-10T01:33:15Z">
-      <class name="advanced.AccountManagement">
-        <test-method status="PASS" signature="setup()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="setup" is-config="true" duration-ms="6361" started-at="2018-07-09T21:32:51Z" finished-at="2018-07-09T21:32:57Z">
+    <test name="Default test" duration-ms="735" started-at="2018-07-12T00:59:16Z" finished-at="2018-07-12T00:59:17Z">
+      <class name="data.NewAccountEXCEL">
+        <test-method status="PASS" signature="setup()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="setup" is-config="true" duration-ms="3" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="loginTest" duration-ms="1096" started-at="2018-07-09T21:32:57Z" data-provider="testData" finished-at="2018-07-09T21:32:59Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="loginTest" duration-ms="7" started-at="2018-07-11T20:59:17Z" data-provider="getNewAccountData" finished-at="2018-07-11T20:59:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tim@testemail.com]]>
+                <![CDATA[Fisher]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[password]]>
+                <![CDATA[White]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[true]]>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Fisher.White@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[FWpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5.812924712E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[TRUE]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="tearDown" is-config="true" duration-ms="425" started-at="2018-07-09T21:32:59Z" finished-at="2018-07-09T21:32:59Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="teardown" is-config="true" duration-ms="1" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="setup" is-config="true" duration-ms="6028" started-at="2018-07-09T21:32:59Z" finished-at="2018-07-09T21:33:05Z">
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="loginTest" duration-ms="1232" started-at="2018-07-09T21:33:05Z" data-provider="testData" finished-at="2018-07-09T21:33:06Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="loginTest" duration-ms="2" started-at="2018-07-11T20:59:17Z" data-provider="getNewAccountData" finished-at="2018-07-11T20:59:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[lindsey@freddie.com]]>
+                <![CDATA[Kendall]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[lindseypassword]]>
+                <![CDATA[Bahn]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kendall.Bahn@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[KBpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4.147185226E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[FALSE]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="tearDown" is-config="true" duration-ms="275" started-at="2018-07-09T21:33:06Z" finished-at="2018-07-09T21:33:07Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="setup" is-config="true" duration-ms="6642" started-at="2018-07-09T21:33:07Z" finished-at="2018-07-09T21:33:13Z">
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, boolean)[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="loginTest" duration-ms="976" started-at="2018-07-09T21:33:13Z" data-provider="testData" finished-at="2018-07-09T21:33:14Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="loginTest" duration-ms="2" started-at="2018-07-11T20:59:17Z" data-provider="getNewAccountData" finished-at="2018-07-11T20:59:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[kim@freddie.com]]>
+                <![CDATA[Sam]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[kpassword]]>
+                <![CDATA[Stones]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[false]]>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sam.Stones@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[SSpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.624951383E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[TRUE]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:advanced.AccountManagement@6d8a00e3]" name="tearDown" is-config="true" duration-ms="347" started-at="2018-07-09T21:33:14Z" finished-at="2018-07-09T21:33:15Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- advanced.AccountManagement -->
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="loginTest" duration-ms="5" started-at="2018-07-11T20:59:17Z" data-provider="getNewAccountData" finished-at="2018-07-11T20:59:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Daniel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Polar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Daniel.Polar@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[DPpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3.959076778E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="setup" is-config="true" duration-ms="0" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="teardown" is-config="true" duration-ms="1" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="setup" is-config="true" duration-ms="1" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="loginTest" duration-ms="2" started-at="2018-07-11T20:59:17Z" data-provider="getNewAccountData" finished-at="2018-07-11T20:59:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rosie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Stans]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Rosie.Stans@testmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[RSpass]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8.83612666E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[TRUE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:data.NewAccountEXCEL@6cc4c815]" name="teardown" is-config="true" duration-ms="0" started-at="2018-07-11T20:59:17Z" finished-at="2018-07-11T20:59:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- data.NewAccountEXCEL -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

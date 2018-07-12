@@ -5,12 +5,15 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CSV {
 	
-	public static void get() {
-		// reading CSV - comma separated value
-		String filename = "C:\\HexawareTraining\\Cohort3\\Selenium-BDD\\Workspace\\FreddieProject\\test-data\\LoginData.txt";
+	// reading CSV - comma separated value
+	public static List<String[]> get(String filename) {
+		// define data structure
+		List<String[]> dataSet = new ArrayList<String[]>();
 		
 		// 1. Create the file (in Java)
 		File file = new File(filename);
@@ -22,7 +25,11 @@ public class CSV {
 			// 3. Read the file
 			String line;
 			while ((line = br.readLine()) != null) {
-				System.out.println(line);
+				// Parse by character (comma)
+				String[] record = line.split(",");
+				
+				// Add record to data set
+				dataSet.add(record);
 			}
 			
 			// 4. Close the file
@@ -33,6 +40,9 @@ public class CSV {
 		} catch (IOException e) {
 			System.out.println("ERROR: " + e.getMessage());
 		}
+		
+		System.out.println("Finished Reading File. Records: " + dataSet.size());
+		return dataSet;
 	}
 
 }
