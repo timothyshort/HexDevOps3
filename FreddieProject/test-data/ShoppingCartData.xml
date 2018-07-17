@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <shoppingcart>
-   <order product="phone">
+   <order product="phone" price="899" carrier="Verizon">
       <itemresult>1</itemresult>
       <qty>2</qty>
       <custname>Ryan Harding</custname>
       <custaddress>523 W Main St</custaddress>
       <custcity>Salt Fork</custcity>
     </order>
-    <order product="tv">
+    <order product="tv" price="599" manufacturer="Samsung">
       <itemresult>2</itemresult>
       <qty>3</qty>
       <custname>Sarah Mitchel</custname>

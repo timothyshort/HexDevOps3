@@ -25,30 +25,38 @@ public class XML {
 		try {
 			// 2. Define node settings
 			NodeList xOrders = (NodeList) xPath.evaluate("/shoppingcart/order", xmlFile, XPathConstants.NODESET);
-			XPathExpression xItemResult = xPath.compile("itemresult");
-			XPathExpression xQty = xPath.compile("qty");
-			XPathExpression xCustName = xPath.compile("custname");
-			XPathExpression xCustAddress = xPath.compile("custaddress");
-			XPathExpression xCustCity = xPath.compile("custcity");
+			
+			// PROGRAMMTIC ITERATORS
+			for (int i=0; i<xOrders.getLength(); i++) {
+				// Extract each node
+				Node node = xOrders.item(i);
+				// Extract child nodes
+				NodeList children = node.getChildNodes();
+				for (int j=0; j<children.getLength(); j++) {
+					System.out.println(children.item(j).getTextContent());
+				}
+			}
+			
+			// DEFINING WITH XPATH
 			
 			// Defining data structure size
-			int numRows = xOrders.getLength();
-			int numCols = 6;
-			data = new String[numRows][numCols];
-			System.out.println("DATASET: " + numRows + "x" + numCols);
+			int records = xOrders.getLength();
+			int fields = 6;
+			data = new String[records][fields];
+			System.out.println("DATASET: " + records + "x" + fields);
 			
 			// 3. Iterate through XML
-			for (int i=0; i<numRows; i++) {
+			for (int i=0; i<records; i++) {
 				// Create node from node list				
 				Node order = xOrders.item(i);
 				
-				// Capture the data from each node and place into temp variable
-				String productType = order.getAttributes().item(0).getTextContent();
-				String itemResult = xItemResult.evaluate(order);
-				String qty = xQty.evaluate(order);
-				String custName = xCustName.evaluate(order);
-				String custAddress = xCustAddress.evaluate(order);
-				String custCity = xCustCity.evaluate(order);
+				// Capture via XPath
+				String productType = order.getAttributes().item(2).getTextContent();
+				String itemResult = xPath.compile("itemresult").evaluate(order);
+				String qty = xPath.compile("qty").evaluate(order);
+				String custName = xPath.compile("custname").evaluate(order);
+				String custAddress = xPath.compile("custaddress").evaluate(order);
+				String custCity = xPath.compile("custcity").evaluate(order);
 				
 				// Pass into data structure
 				data[i][0] = productType;
@@ -64,7 +72,7 @@ public class XML {
 			}
 			
 		// 5. Close the file
-		return data;
+		return null;
 	}
 
 }
