@@ -14,7 +14,9 @@ public class Readers {
 	public static void main(String[] args) throws Exception {
 		// List<String[]> data = utilities.CSV.get("C:\\HexawareTraining\\Cohort3\\Selenium-BDD\\Workspace\\FreddieProject\\test-data\\LoginData.txt");
 		// String[][] data = utilities.Excel.get(GlobalConfigs.TESTDATA_DIR + "NewAccountData.xlsx");
-		String[][] data = utilities.Database.getSQLServer("SELECT * FROM MortgageLoanTestData");
+		// String[][] data = utilities.Database.getSQLServer("SELECT * FROM MortgageLoanTestData");
+		
+		String[][] data = utilities.XML.getByXpath(GlobalConfigs.TESTDATA_DIR + "ShoppingCartData.xml");
 		
 		
 		// Iterate dataset

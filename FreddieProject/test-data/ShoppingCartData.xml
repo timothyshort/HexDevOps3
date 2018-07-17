@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<shoppingcart>
+   <order product="phone">
+      <itemresult>1</itemresult>
+      <qty>2</qty>
+      <custname>Ryan Harding</custname>
+      <custaddress>523 W Main St</custaddress>
+      <custcity>Salt Fork</custcity>
+    </order>
+    <order product="tv">
+      <itemresult>2</itemresult>
+      <qty>3</qty>
+      <custname>Sarah Mitchel</custname>
+      <custaddress>1101 High St</custaddress>
+      <custcity>Manhattan</custcity>
+    </order>
+</shoppingcart>
