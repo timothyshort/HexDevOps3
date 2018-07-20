@@ -13,5 +13,10 @@
 	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/stax-api-1.0.jar"/>
 	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/sqljdbc4-4.0.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/cucumber-core-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/cucumber-java-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/cucumber-junit-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/cucumber-jvm-deps-1.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/HexawareTraining/Materials/Software/Selenium-BDD/gherkin-2.12.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
