@@ -1,8 +1,13 @@
 package cucumber.steps;
 
+import java.util.List;
+import java.util.Map;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -24,15 +29,66 @@ public class Login {
 	    System.out.println("Enter email");
 	    driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys(email);
 	}
-
+	
 	// Exercise:
 	// Write the implementation for the password step
-	@When("^the user enters \"(.*)\" as password$")
+	@When("^the user enters (.*) as password$")
 	public void the_user_enters_password(String password) {
 		System.out.println("Entering password");
 		driver.findElement(By.name("ctl00$MainContent$txtPassword")).sendKeys(password);
 	}
-
+	
+	// Exercise
+	// Write implementation for two parameters
+	@When("^the user enters \"(.*)\" and \"(.*)\" and clicks login$")
+	public void enters_credentials(String email, String password) {
+		driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys(email);
+		driver.findElement(By.name("ctl00$MainContent$txtPassword")).sendKeys(password);
+		driver.findElement(By.name("ctl00$MainContent$btnLogin")).click();
+	}
+	
+	// Write implementation for datatable at step-level
+	@When("the user enters credentials")
+	public void the_user_enters_credentials(DataTable data) {
+		// Convert into Collection list
+		List<List<String>> credentials = data.raw();
+		
+		// Parse into local variables
+		String email = credentials.get(0).get(0);
+		String password = credentials.get(0).get(1);
+		
+		enterCredsAndClickLogin(email, password);
+	}
+	
+	// Write implementation for datatable at step-level: using LIST
+	@When("the user enters three bad login attempts and then a good login attempt")
+	public void the_user_enters_three_login_credentials(DataTable data) {
+		List<List<String>> credentials = data.raw();
+		for (List<String> credential : credentials) {
+			String email = credential.get(0);
+			String password = credential.get(1);
+			enterCredsAndClickLogin(email, password);
+		}
+	}
+	
+	// Write implementation for datatable at step-level: using MAP
+	@When("the user enters two bad login attempts and then a good login attempt")
+	public void the_user_enters_two_login_credentials(DataTable data) {
+		List<Map<String, String>> credentials = data.asMaps(String.class, String.class);
+		for (Map<String, String> credential : credentials) {
+			String email = credential.get("Username");
+			String password = credential.get("Password");
+			enterCredsAndClickLogin(email, password);
+		}
+	}
+	
+	private void enterCredsAndClickLogin(String email, String password) {
+		driver.findElement(By.name("ctl00$MainContent$txtUserName")).clear();
+		driver.findElement(By.name("ctl00$MainContent$txtPassword")).clear();			
+		driver.findElement(By.name("ctl00$MainContent$txtUserName")).sendKeys(email);
+		driver.findElement(By.name("ctl00$MainContent$txtPassword")).sendKeys(password);
+		driver.findElement(By.name("ctl00$MainContent$btnLogin")).click();
+	}
 
 	@When("^the clicks the login button$")
 	public void the_clicks_the_login_button() throws Throwable {
@@ -43,7 +99,11 @@ public class Login {
 	@Then("^the user should see get a welcome message$")
 	public void the_user_should_see_get_a_welcome_message() throws Throwable {
 	    System.out.println("See welcome message");
-	    System.out.println(driver.findElement(By.id("conf_message")).getText());
+	    try {
+	    	System.out.println(driver.findElement(By.id("conf_message")).getText());
+	    } catch (Exception e) {
+	    	Assert.fail();
+	    }
 	}
 
 }
