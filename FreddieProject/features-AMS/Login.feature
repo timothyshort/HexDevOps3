@@ -44,7 +44,6 @@ Feature: The TrainingRite Login functionality of the Account Management System
     Then the user should see get a welcome message
 
   #Parameters: multiple datasets at scenario-level
-  @development
   Scenario Outline: the user should be able to access account information
     Given when the user is on the login page
     And when the user logs using credentials "<username>" and "<password>"
