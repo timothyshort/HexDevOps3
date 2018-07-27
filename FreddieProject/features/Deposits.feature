@@ -1,9 +1,10 @@
+@govReg
 Feature: implement the deposits functionality
 
   Background: the user is logged in
     Given the user logged in
 
-  @govReg
+  @success
   Scenario: the user should be able to click on make deposit
     And the user sees Make Deposit
     When the user clicks Make Deposit

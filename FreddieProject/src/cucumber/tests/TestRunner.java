@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = { "features", "features-AMS" },
 		glue = "cucumber.steps",
-		tags = { "@success, @govReg, @end2end" },
+		tags = { "@govReg" },
 		dryRun = true)
 public class TestRunner {
 
