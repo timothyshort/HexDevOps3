@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
@@ -48,16 +46,18 @@
 <fullyQualifiedTypeName name="pages.Products"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
-<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="cucumber.api.PendingException"/>
 <fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
 <fullyQualifiedTypeName name="cucumber.api.java.en.When"/>
 <fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
-<fullyQualifiedTypeName name="cucumber.api.PendingException"/>
-<fullyQualifiedTypeName name="utilities.DriverFactory"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="utilities.DriverFactory"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
-<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="cucumber.api.DataTable"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="cucumber.api.junit.Cucumber"/>
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
 <fullyQualifiedTypeName name="cucumber.api.CucumberOptions"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
 </qualifiedTypeNameHistroy>

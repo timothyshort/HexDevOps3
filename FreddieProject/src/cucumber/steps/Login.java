@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -104,6 +105,21 @@ public class Login {
 	    } catch (Exception e) {
 	    	Assert.fail();
 	    }
+	}
+	
+	@Given("^when the user is on the login page$")
+	public void when_the_user_is_on_the_login_page() throws Throwable {
+	    System.out.println("user on login page");
+	}
+
+	@Given("^when the user logs using credentials \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void when_the_user_logs_using_credentials_and(String username, String password) throws Throwable {
+	    System.out.println("user credentials: " + username + " " + password);
+	}
+
+	@Then("^the user should able to see \"([^\"]*)\"$")
+	public void the_user_should_able_to_see(String message) throws Throwable {
+	    System.out.println("user sees: " + message);
 	}
 
 }
