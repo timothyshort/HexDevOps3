@@ -1,0 +1,258 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in",
+            "match": {
+              "location": "Deposits.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "the user should be able to click on make deposit",
+        "description": "",
+        "id": "implement-the-deposits-functionality;the-user-should-be-able-to-click-on-make-deposit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user sees Make Deposit",
+            "match": {
+              "location": "Deposits.the_user_sees_Make_Deposit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the user clicks Make Deposit",
+            "match": {
+              "location": "Deposits.the_user_clicks_Make_Deposit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user is taken the deposits page",
+            "match": {
+              "location": "Deposits.the_user_is_taken_the_deposits_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@success"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in",
+            "match": {
+              "location": "Deposits.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "the user should be able to make a deposit",
+        "description": "",
+        "id": "implement-the-deposits-functionality;the-user-should-be-able-to-make-a-deposit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "the user is on the deposit page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "the user enters deposit amount and clicks submit",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "the user should see a confirmation message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@success"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in",
+            "match": {
+              "location": "Deposits.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "the user should see their recent deposits",
+        "description": "",
+        "id": "implement-the-deposits-functionality;the-user-should-see-their-recent-deposits",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "the suer is on the deposit page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "the user should see recent deposits",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@success"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in",
+            "match": {
+              "location": "Deposits.the_user_logged_in()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "a deposit should be rejected if larger than $5000",
+        "description": "",
+        "id": "implement-the-deposits-functionality;a-deposit-should-be-rejected-if-larger-than-$5000",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "the user enters a deposit of at least 5000",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "the deposit is rejected",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@rejection"
+          }
+        ]
+      }
+    ],
+    "name": "implement the deposits functionality",
+    "description": "",
+    "id": "implement-the-deposits-functionality",
+    "keyword": "Feature",
+    "uri": "Deposits.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@govReg"
+      }
+    ]
+  }
+]

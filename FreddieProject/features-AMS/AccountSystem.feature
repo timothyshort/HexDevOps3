@@ -1,4 +1,4 @@
-@development
+@AccountSystem
 Feature: the back-end options of the account management system
 	As a registered member
 	I want to access account information
@@ -23,4 +23,4 @@ Feature: the back-end options of the account management system
 	
 	Scenario: user is logged out after 15 minutes of inactivity
 		When the user is idle for 15 minutes
-		Then the should be logged out
+		Then user should be logged out

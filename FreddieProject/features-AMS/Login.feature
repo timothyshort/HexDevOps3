@@ -1,3 +1,4 @@
+@LoginFeature
 Feature: The TrainingRite Login functionality of the Account Management System
   As a registered member of the application
   I want to login

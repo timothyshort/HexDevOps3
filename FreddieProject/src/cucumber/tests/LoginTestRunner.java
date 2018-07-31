@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "features-AMS",
-		tags = "@development",
+		tags = "@LoginFeature",
 		glue = "cucumber.steps",
 		dryRun = false
 		)

@@ -1,0 +1,463 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 6,
+            "value": "#Background: context or assumption for each scenario"
+          }
+        ],
+        "line": 7,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1590317767,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "AccountManagement.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70425,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "AccountManagement.the_user_enters_valid_credentials()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5171899330,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "user should see a welcome message",
+        "description": "",
+        "id": "the-back-end-options-of-the-account-management-system;user-should-see-a-welcome-message",
+        "after": [
+          {
+            "result": {
+              "duration": 402822722,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 69009,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user should see a welcome message",
+            "match": {
+              "location": "AccountManagement.the_user_should_see_a_welcome_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 6,
+            "value": "#Background: context or assumption for each scenario"
+          }
+        ],
+        "line": 7,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1312193529,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "AccountManagement.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56269,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "AccountManagement.the_user_enters_valid_credentials()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3753162389,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "user should be able to see their bill",
+        "description": "",
+        "id": "the-back-end-options-of-the-account-management-system;user-should-be-able-to-see-their-bill",
+        "after": [
+          {
+            "result": {
+              "duration": 361705652,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 159606,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user should see their bill",
+            "match": {
+              "location": "AccountManagement.the_user_should_see_their_bill()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 6,
+            "value": "#Background: context or assumption for each scenario"
+          }
+        ],
+        "line": 7,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1281585668,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "AccountManagement.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57684,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "AccountManagement.the_user_enters_valid_credentials()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3696654861,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "user should be able to see their account information",
+        "description": "",
+        "id": "the-back-end-options-of-the-account-management-system;user-should-be-able-to-see-their-account-information",
+        "after": [
+          {
+            "result": {
+              "duration": 271851130,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 72902,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user should see account information",
+            "match": {
+              "location": "AccountManagement.the_user_should_see_account_information()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 6,
+            "value": "#Background: context or assumption for each scenario"
+          }
+        ],
+        "line": 7,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1326034642,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "AccountManagement.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68655,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "AccountManagement.the_user_enters_valid_credentials()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3705670641,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "user should be able to logout",
+        "description": "",
+        "id": "the-back-end-options-of-the-account-management-system;user-should-be-able-to-logout",
+        "after": [
+          {
+            "result": {
+              "duration": 272590413,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 84934,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the clicks logout",
+            "match": {
+              "location": "AccountManagement.the_clicks_logout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60162,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should be logged out",
+            "match": {
+              "location": "AccountManagement.user_should_be_logged_out()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 6,
+            "value": "#Background: context or assumption for each scenario"
+          }
+        ],
+        "line": 7,
+        "name": "the user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1373179927,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "AccountManagement.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 60162,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "AccountManagement.the_user_enters_valid_credentials()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3698232162,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "user is logged out after 15 minutes of inactivity",
+        "description": "",
+        "id": "the-back-end-options-of-the-account-management-system;user-is-logged-out-after-15-minutes-of-inactivity",
+        "after": [
+          {
+            "result": {
+              "duration": 343891026,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AccountManagement.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1615876,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user is idle for 15 minutes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 21
+                }
+              ],
+              "location": "AccountManagement.the_user_is_idle_for_minutes(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37513,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user should be logged out",
+            "match": {
+              "location": "AccountManagement.user_should_be_logged_out()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "the back-end options of the account management system",
+    "description": "As a registered member\r\nI want to access account information",
+    "id": "the-back-end-options-of-the-account-management-system",
+    "keyword": "Feature",
+    "uri": "AccountSystem.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AccountSystem"
+      }
+    ]
+  }
+]

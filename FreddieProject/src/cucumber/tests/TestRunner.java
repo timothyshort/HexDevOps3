@@ -9,8 +9,12 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = { "features", "features-AMS" },
 		glue = "cucumber.steps",
-		tags = { "@govReg" },
-		dryRun = true)
+		tags = { "@AccountSystem" },
+		plugin = { "pretty",
+				"json:reports/cucumberDocumentation.json",
+				"html:reports" },
+		// format = { "json:reports/cucumberResults.json" },
+		dryRun = false)
 public class TestRunner {
 
 }
