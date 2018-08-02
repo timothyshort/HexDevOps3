@@ -9,9 +9,10 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "features",
-		glue = "cukes.test",
-		tags = "@AUT",
-		dryRun = false
+		glue = "cucumber.steps",
+		tags = "@govReg",
+		dryRun = true,
+		snippets = SnippetType.CAMELCASE
 		)
 public class DryRunner {
 

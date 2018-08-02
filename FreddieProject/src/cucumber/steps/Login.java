@@ -15,14 +15,23 @@ import cucumber.api.java.en.When;
 import utilities.DriverFactory;
 
 public class Login {
+	Hooks hooks;
 	WebDriver driver;
 	
+	public Login(Hooks hooks) {
+		System.out.println("LOGIN CONSTRUCTOR!");
+		this.hooks = hooks;
+	}
 	
 	@Given("^the guest is on the login page$")
 	public void the_guest_is_on_the_login_page() throws Throwable {
 		System.out.println("Login page");
-		driver = DriverFactory.start("firefox");
-	    driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
+		hooks.setup();
+		driver = hooks.getDriver();
+		driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
+		// driver = 
+		// driver = DriverFactory.start("firefox");
+	    // driver.get("http://sdettraining.com/trguitransactions/AccountManagement.aspx");
 	}
 
 	@When("^the user enters \"(.*)\" as username$")

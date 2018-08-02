@@ -7,6 +7,10 @@
 
 
 	<dependencies>
+	
+		<!-- Add Cucumber JARs: io.cucumber for Java and Core -->
+		<!-- Gherkin -->
+		<!-- Cucumber-JVM-Deps -->
 
 		<!-- Add Selenium Library -->
 		<dependency>
